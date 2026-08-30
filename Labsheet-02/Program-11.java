@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+class StudentResult {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter theory marks (%): ");
+        double theory = sc.nextDouble();
+
+        System.out.print("Enter practical marks (%): ");
+        double practical = sc.nextDouble();
+
+        System.out.print("Enter overall marks (%): ");
+        double overall = sc.nextDouble();
+
+        if ((theory >= 40 && practical >= 50) || overall >= 50) {
+            System.out.println("Student passes the course.");
+        } else {
+            System.out.println("Student fails the course.");
+        }
+
+        sc.close();
+    }
+}
